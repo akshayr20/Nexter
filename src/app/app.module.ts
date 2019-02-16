@@ -11,6 +11,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { FooterComponent } from './footer/footer.component';
 import { StoryPictureComponent } from './story-picture/story-picture.component';
 import { StoryContentComponent } from './story-content/story-content.component';
+import { StoriesComponent } from './stories/stories.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { StoryContentComponent } from './story-content/story-content.component';
     StoryContentComponent,
     HomesComponent,
     GalleryComponent,
-    FooterComponent
+    FooterComponent,
+    StoriesComponent
   ],
   imports: [BrowserModule],
   providers: [],
