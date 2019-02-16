@@ -6,10 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./homes.component.scss']
 })
 export class HomesComponent implements OnInit {
+  homes = [1, 2, 3, 4, 5];
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
