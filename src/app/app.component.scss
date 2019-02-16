@@ -27,8 +27,14 @@
   grid-column: center-start/center-end;
 }
 
-.stories {
-  grid-column: full-start/full-end;
+.picture {
+  grid-column: full-start/ col-end 4;
+  grid-row: 3/4;
+}
+
+.content {
+  grid-column: col-start 5 / full-end;
+  grid-row: 3/4;
 }
 
 .homes {
