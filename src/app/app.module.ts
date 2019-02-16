@@ -9,9 +9,9 @@ import { FeaturesComponent } from './features/features.component';
 import { HomesComponent } from './homes/homes.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { FooterComponent } from './footer/footer.component';
-import { StoryPictureComponent } from './story-picture/story-picture.component';
-import { StoryContentComponent } from './story-content/story-content.component';
 import { StoriesComponent } from './stories/stories.component';
+import { StoryPictureComponent } from './stories/story-picture/story-picture.component';
+import { StoryContentComponent } from './stories/story-content/story-content.component';
 
 @NgModule({
   declarations: [
