@@ -1,0 +1,55 @@
+.container {
+  display: grid;
+  grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+  grid-template-columns:
+    [sidebar-start]8rem [sidebar-end full-start] minmax(6rem, 1fr)
+    [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end]
+    minmax(6rem, 1fr) [full-end];
+}
+
+.sidebar {
+  background-color: aqua;
+  grid-column: sidebar-start/sidebar-end;
+  grid-row: 1/-1;
+}
+
+.header {
+  background-color: springgreen;
+  grid-column: full-start/ col-end 6;
+}
+
+.realtors {
+  background-color: blueviolet;
+  grid-column: col-start 7 / full-end;
+}
+
+.features {
+  grid-column: center-start/center-end;
+  background-color: orangered;
+}
+
+.stories {
+  &__picture {
+    background-color: red;
+    grid-column: full-start/ col-end 4;
+  }
+  &__content {
+    background-color: palevioletred;
+    grid-column: col-start 5 / full-end;
+  }
+}
+
+.homes {
+  grid-column: center-start/center-end;
+  background-color: blue;
+}
+
+.gallery {
+  background-color: blueviolet;
+  grid-column: full-start/full-end;
+}
+
+.footer {
+  background-color: black;
+  grid-column: full-start/full-end;
+}
