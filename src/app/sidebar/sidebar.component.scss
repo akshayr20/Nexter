@@ -1,6 +1,11 @@
+@import '../../assets/sass/variable';
 .sidebar {
   display: flex;
   justify-content: center;
+  @media only screen and (max-width: $bp-large) {
+    justify-content: flex-end;
+    align-items: center;
+  }
 }
 .nav-btn {
   border: none;
@@ -10,6 +15,10 @@
   height: 2px;
   width: 4.5rem;
   margin-top: 4rem;
+  @media only screen and (max-width: $bp-large) {
+    margin-top: 3rem;
+    margin-right: 3rem;
+  }
 
   &::before,
   &::after {
