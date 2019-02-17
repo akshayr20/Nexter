@@ -13,6 +13,9 @@
       [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end]
       minmax(6rem, 1fr) [full-end];
   }
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-rows: 6rem calc(100vh - 6rem);
+  }
 }
 
 .sidebar {
@@ -27,10 +30,16 @@
 
 .header {
   grid-column: full-start/ col-end 6;
+  @media only screen and (max-width: $bp-medium) {
+    grid-column: full-start/ full-end;
+  }
 }
 
 .realtors {
   grid-column: col-start 7 / full-end;
+  @media only screen and (max-width: $bp-medium) {
+    grid-column: full-start/ full-end;
+  }
 }
 
 .features {
@@ -38,11 +47,19 @@
 }
 
 .picture {
+  padding: 6rem;
   grid-column: full-start/ col-end 4;
+  @media only screen and (max-width: $bp-medium) {
+    grid-column: 1/ -1;
+  }
 }
 
 .content {
   grid-column: col-start 5 / full-end;
+  @media only screen and (max-width: $bp-medium) {
+    grid-column: 1/ -1;
+    grid-row: 5/6;
+  }
 }
 
 .homes {
@@ -54,6 +71,7 @@
 }
 
 .footer {
+  padding: 6rem;
   background-color: var(--color-secondary);
   grid-column: full-start/full-end;
 }

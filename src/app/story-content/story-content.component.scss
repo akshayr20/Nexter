@@ -1,14 +1,13 @@
 :host {
+  height: 100%;
   display: grid;
   align-content: center;
   justify-items: start;
   padding: 6rem 8vw;
 }
 
-.content {
-  &__text {
-    font-size: 1.5rem;
-    font-style: italic;
-    margin-bottom: 4rem;
-  }
+.content__text {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-bottom: 4rem;
 }

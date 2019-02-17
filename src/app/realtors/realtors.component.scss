@@ -1,10 +1,13 @@
+@import '../../assets/sass/variable';
+
 :host {
+  background-color: var(--color-secondary);
+
   display: grid;
   align-content: center;
   justify-content: center;
-  background-color: var(--color-secondary);
-  grid-row-gap: 2rem;
   justify-items: center;
+  grid-row-gap: 2rem;
 }
 
 .realtors {
@@ -14,9 +17,13 @@
 
   &__list {
     display: grid;
-    grid-template-columns: min-content max-content;
     grid-column-gap: 2rem;
     align-items: center;
+    grid-template-columns: min-content max-content;
+
+    @media only screen and (max-width: $bp-large) {
+      grid-template-columns: repeat(3, min-content max-content);
+    }
   }
   &__img {
     width: 7rem;
